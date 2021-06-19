@@ -4,7 +4,7 @@ import { useObserver } from '../hooks'
 import { heightOffsetType } from '../types'
 import { Slice } from './Slice'
 
-export const Slices: React.FC<{ image: string}> = ({ image }) => {
+export const GlitchedImage: React.FC<{ image: string}> = ({ image }) => {
   const slicesRef = useRef<HTMLDivElement>(null)
   const [containerDims, setContainerDims] = useState({ width: 0, height: 0 })
   const [imageDims, setImageDims] = useState({ width: 0, height: 0 })

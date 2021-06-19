@@ -1,1 +1,1 @@
-export * from './Slices'
+export * from './GlitchedImage'

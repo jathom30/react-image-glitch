@@ -37,6 +37,10 @@
   },
   "name": "react-image-glitch",
   "author": "Jeff Thomas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jathom30/react-image-glitch"
+  },
   "module": "dist/react-image-glitch.esm.js",
   "size-limit": [
     {
