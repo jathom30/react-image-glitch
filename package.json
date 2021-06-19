@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.11",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -22,7 +22,8 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "husky": {
     "hooks": {
