@@ -1,4 +1,4 @@
-import { DimensionsType, heightOffsetType } from "./types"
+import { DimensionsType, heightOffsetType } from "./Typings"
 
 export const getRandomNumberBetween = (min: number, max: number) => {
   return Math.floor(Math.random() * max) + min

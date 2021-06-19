@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { createSlices, getRandomNumberBetween, getRatioImageSize } from '../helpers'
 import { useObserver } from '../hooks'
-import { heightOffsetType } from '../types'
+import { heightOffsetType } from '../Typings'
 import { Slice } from './Slice'
 
 export const GlitchedImage: React.FC<{ image: string}> = ({ image }) => {
