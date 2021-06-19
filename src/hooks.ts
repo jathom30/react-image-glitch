@@ -1,4 +1,5 @@
 import { RefObject, useEffect, useRef } from 'react'
+import ResizeObserver from 'resize-observer-polyfill'
 
 export const useObserver = (callback: () => void, element: RefObject<HTMLDivElement>) => {
   const observer = useRef<any>(null)
@@ -15,8 +16,7 @@ export const useObserver = (callback: () => void, element: RefObject<HTMLDivElem
     if (observer && observer.current && current) {
       observer.current.unobserve(current)
     }
-    const resizeObserverOrPolyfill: any = ResizeObserver;
-    observer.current = new resizeObserverOrPolyfill(callback);
+    observer.current = new ResizeObserver(callback);
     observe()
 
     return () => {
