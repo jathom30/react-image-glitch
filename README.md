@@ -15,9 +15,13 @@ import { image } from './myImage.jpg'
 const MyComponent = () => {
   const myImageString = 'www.example.com/image'
   return (
-    <div style={{ height: 500 }}>
-      <GlitchedImage image={myImageString} />
-      <GlitchedImage image={image} />
+    <div style={{ display: 'flex' }}>
+      <div style={{ height: 500 }}>
+        <GlitchedImage image={myImageString} />
+      </div>
+      <div style={{ flexGrow: 1 }}>
+        <GlitchedImage image={image} />
+      </div>
     </div>
   )
 }
