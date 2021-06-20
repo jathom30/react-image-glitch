@@ -10,12 +10,14 @@ GlitchedImage takes a single image prop (`string`) and must be in a container wi
 
 ```tsx
 import { GlitchedImage } from 'react-image-glitch'
+import { image } from './myImage.jpg'
 
 const MyComponent = () => {
   const myImageString = 'www.example.com/image'
   return (
     <div style={{ height: 500 }}>
       <GlitchedImage image={myImageString} />
+      <GlitchedImage image={image} />
     </div>
   )
 }
